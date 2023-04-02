@@ -10,7 +10,7 @@
 
     $conn = mysqli_connect($MYSQL_ADDON_HOST, $MYSQL_ADDON_USER, $MYSQL_ADDON_PASSWORD, $MYSQL_ADDON_BD); 
 
-    if (!$conn === false) { 
+    if ($conn === false) { 
         die("ERROR: Could not connect. " . mysqli_connect_error()); 
     } 
 
